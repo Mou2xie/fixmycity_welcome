@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <rect width="600" height="500" rx="40" fill="url(#bg)" opacity="0.5"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Phone frame -->
+  <rect x="370" y="60" width="160" height="310" rx="24" fill="var(--bg, #fff)" stroke="var(--border, #e2e8f0)" stroke-width="1.5"/>
+  <rect x="375" y="65" width="150" height="300" rx="20" fill="var(--bg-alt, #0f172a)"/>
+
+  <!-- Phone screen content -->
+  <rect x="390" y="85" width="120" height="8" rx="4" fill="var(--primary, #6366f1)" opacity="0.3"/>
+  <rect x="390" y="105" width="100" height="4" rx="2" fill="var(--text-secondary, #64748b)" opacity="0.4"/>
+
+  <!-- App icons on phone -->
+  <circle cx="410" cy="145" r="18" fill="var(--primary-light, rgba(99,102,241,0.1))"/>
+  <path d="M404 145h12M410 139v12" stroke="var(--primary, #6366f1)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="450" cy="145" r="18" fill="rgba(6,182,212,0.1)"/>
+  <circle cx="450" cy="145" r="5" fill="var(--secondary, #06b6d4)"/>
+
+  <rect x="390" y="185" width="120" height="60" rx="8" fill="rgba(99,102,241,0.08)"/>
+  <rect x="400" y="195" width="50" height="4" rx="2" fill="var(--primary, #6366f1)" opacity="0.6"/>
+  <rect x="400" y="207" width="80" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+  <rect x="400" y="217" width="60" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+  <rect x="400" y="227" width="70" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+
+  <rect x="390" y="255" width="120" height="60" rx="8" fill="rgba(167,139,250,0.08)"/>
+  <rect x="400" y="265" width="50" height="4" rx="2" fill="var(--accent, #a78bfa)" opacity="0.6"/>
+  <rect x="400" y="277" width="80" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+  <rect x="400" y="287" width="60" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+  <rect x="400" y="297" width="70" height="3" rx="1.5" fill="var(--text-secondary, #64748b)" opacity="0.3"/>
+
+  <circle cx="450" cy="350" r="6" fill="var(--primary, #6366f1)" opacity="0.5"/>
+
+  <!-- Location pins on the left -->
+  <g transform="translate(80, 100)">
+    <path d="M60 30C60 30 30 70 30 95C30 113.5 43.5 125 60 125C76.5 125 90 113.5 90 95C90 70 60 30 60 30Z" fill="url(#pin)" opacity="0.9"/>
+    <circle cx="60" cy="90" r="12" fill="#fff"/>
+    <path d="M54 90h12M60 84v12" stroke="url(#pin)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <path d="M110 280Q130 240 160 250Q180 255 190 240" stroke="var(--secondary, #06b6d4)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="110" cy="280" r="5" fill="var(--secondary, #06b6d4)" opacity="0.8"/>
+  <circle cx="190" cy="240" r="5" fill="var(--primary, #6366f1)" opacity="0.8"/>
+
+  <!-- Connection dots -->
+  <circle cx="120" cy="180" r="3" fill="var(--primary, #6366f1)" opacity="0.4"/>
+  <circle cx="140" cy="160" r="2" fill="var(--secondary, #06b6d4)" opacity="0.4"/>
+  <circle cx="160" cy="200" r="2.5" fill="var(--accent, #a78bfa)" opacity="0.4"/>
+  <circle cx="150" cy="220" r="2" fill="var(--primary, #6366f1)" opacity="0.3"/>
+
+  <!-- Buildings silhouette -->
+  <g opacity="0.06" fill="var(--text-heading, #0f172a)">
+    <rect x="40" y="300" width="40" height="100" rx="0"/>
+    <rect x="90" y="250" width="30" height="150" rx="0"/>
+    <rect x="130" y="280" width="35" height="120" rx="0"/>
+    <rect x="175" y="220" width="25" height="180" rx="0"/>
+    <rect x="210" y="260" width="40" height="140" rx="0"/>
+    <rect x="260" y="300" width="30" height="100" rx="0"/>
+    <rect x="300" y="240" width="25" height="160" rx="0"/>
+  </g>
+
+  <!-- Cloud/AI dots -->
+  <g opacity="0.07">
+    <circle cx="250" cy="80" r="40" fill="var(--primary, #6366f1)"/>
+    <circle cx="290" cy="100" r="25" fill="var(--secondary, #06b6d4)"/>
+    <circle cx="220" cy="110" r="20" fill="var(--accent, #a78bfa)"/>
+  </g>
+</svg>
