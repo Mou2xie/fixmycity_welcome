@@ -212,6 +212,7 @@ function App() {
             <div className="team-contact">
               <a href="mailto:Samuelonyenwe6@gmail.com" className="team-contact-link"><Mail size={14} strokeWidth={1.5} aria-hidden="true" /> Email</a>
               <a href="tel:+13828894488" className="team-contact-link"><Phone size={14} strokeWidth={1.5} aria-hidden="true" /> +1 382 889 4488</a>
+              <a href="https://www.linkedin.com/in/samuel-onyenwe/" target="_blank" rel="noopener noreferrer" className="team-contact-link"><Link size={14} strokeWidth={1.5} aria-hidden="true" /> LinkedIn</a>
             </div>
           </div>
           <div className="team-card">
