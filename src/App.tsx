@@ -18,7 +18,8 @@ import {
   Globe,
   GitBranch,
 } from 'lucide-react'
-import heroSvg from './assets/fixmycity-hero.svg'
+import heroJpg from './assets/hero.jpeg'
+import novalogoSvg from './assets/novalogo.svg'
 import logoSvg from './assets/logo.svg'
 import antonImg from './assets/anton.png'
 import luImg from './assets/lu.png'
@@ -48,7 +49,7 @@ function App() {
         </div>
       </header>
 
-      <section id="hero" className="hero-section">
+      <section id="hero" className="hero-section" style={{ backgroundImage: `url(${heroJpg})` }}>
         <div className="hero-inner">
           <div className="hero-content">
             <h1>Report civic issues in seconds, not hours</h1>
@@ -62,9 +63,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="hero-visual">
-            <img src={heroSvg} alt="FixMyCity app illustration" />
-          </div>
+          
         </div>
       </section>
 
@@ -181,6 +180,14 @@ function App() {
           <span className="tech-badge"><Database size={16} strokeWidth={1.5} aria-hidden="true" /> PostgreSQL</span>
           <span className="tech-badge"><Radio size={16} strokeWidth={1.5} aria-hidden="true" /> Real-time</span>
           <span className="tech-badge"><Lock size={16} strokeWidth={1.5} aria-hidden="true" /> RLS</span>
+        </div>
+        <div className="tech-partner">
+          <span className="tech-partner-by">Powered by</span>
+          <a href="https://www.novaagent.me/" target="_blank" rel="noopener noreferrer" className="tech-partner-brand">
+            <img src={novalogoSvg} alt="" className="tech-partner-logo" />
+            <span className="tech-partner-name">NovaAgent</span>
+          </a>
+          <span className="tech-partner-label">zero-code AI agent platform</span>
         </div>
       </section>
 
