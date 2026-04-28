@@ -267,6 +267,11 @@ function App() {
             <img src={antonImg} alt="Anton Dela Cruz" className="team-avatar" />
             <h3>Anton Dela Cruz</h3>
             <p className="team-role">Product Designer</p>
+            <div className="team-contact">
+              <a href="mailto:ant.delacruz52@gmail.com" className="team-contact-link"><Mail size={14} strokeWidth={1.5} aria-hidden="true" /> Email</a>
+              <a href="tel:+15197783846" className="team-contact-link"><Phone size={14} strokeWidth={1.5} aria-hidden="true" /> +1 519 778 3846</a>
+              <a href="https://www.linkedin.com/in/anton-dela-cruz-567328224" target="_blank" rel="noopener noreferrer" className="team-contact-link"><Link size={14} strokeWidth={1.5} aria-hidden="true" /> LinkedIn</a>
+            </div>
           </div>
           <div className="team-card">
             <img src={samImg} alt="Samuel Onyenwe" className="team-avatar" />
