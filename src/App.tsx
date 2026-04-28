@@ -1,17 +1,16 @@
 import {
   BrainCircuit,
-  CloudOff,
-  ShieldCheck,
   Camera,
   Cpu,
   Send,
-  Bug,
   ArrowRight,
   CheckCircle2,
-  Database,
   Radio,
   Lock,
   Smartphone,
+  Apple,
+  Zap,
+  Heart,
   Mail,
   Phone,
   Link,
@@ -26,6 +25,9 @@ import luImg from './assets/lu.png'
 import samImg from './assets/sam.png'
 import shamshadImg from './assets/shamshad.png'
 import xieImg from './assets/xie.png'
+import screen1Png from './assets/1.png'
+import screen2Png from './assets/2.png'
+import screen3Png from './assets/3.png'
 import './App.css'
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
           <nav className="nav">
             <a href="#features">Features</a>
             <a href="#how-it-works">How It Works</a>
+            <a href="#mobile-app">Mobile App</a>
             <a href="#tech-stack">Tech</a>
             <a href="#team">Team</a>
           </nav>
@@ -54,8 +57,10 @@ function App() {
           <div className="hero-content">
             <h1>Report civic issues in seconds, not hours</h1>
             <p className="hero-sub">
-              FixMyCity uses AI to automatically classify and route citizen
-              reports to the right government department — in real time.
+              FixMyCity is an intelligent platform that connects residents
+              with city managers, transforming how urban issues are reported
+              and resolved through seamless integration of the citizen app
+              and government dashboard.
             </p>
             <div className="hero-cta">
               <a href="https://fixmycityadmindashboard.vercel.app/dashboard" className="btn btn-primary btn-lg">
@@ -67,71 +72,92 @@ function App() {
         </div>
       </section>
 
-      <section id="stats" className="stats-section">
-        <div className="stats-grid">
-          <div className="stat-card">
-            <span className="stat-number">88.9%</span>
-            <span className="stat-label">
-              <Bug size={16} strokeWidth={1.5} className="stat-icon" aria-hidden="true" />
-              of citizens surveyed would use an app for fast reporting
-            </span>
+      <section id="platform" className="platform-section">
+        <h2 className="section-title">Dual-platform for city governance</h2>
+        <p className="section-subtitle">
+          Seamlessly connecting residents and city managers through a
+          two-sided intelligent platform.
+        </p>
+        <div className="platform-grid">
+          <div className="platform-card platform-card-citizen">
+            <div className="platform-icon">
+              <Smartphone size={24} strokeWidth={1.5} aria-hidden="true" />
+            </div>
+            <h3>Citizen App</h3>
+            <p>
+              74% of residents find traditional reporting processes too
+              cumbersome. FixMyCity delivers an ultra-simple experience
+              — complete a report in under 60 seconds.
+            </p>
+            <p>
+              Using automatic GPS location and photo upload for visual
+              evidence, citizens can track their issue from submission to
+              resolution in real time, right from their phone.
+            </p>
           </div>
-          <div className="stat-card">
-            <span className="stat-number">AI‑powered</span>
-            <span className="stat-label">
-              <Cpu size={16} strokeWidth={1.5} className="stat-icon" aria-hidden="true" />
-              Auto-classifies issues using image recognition and NLP
-            </span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-number">Real‑time</span>
-            <span className="stat-label">
-              <Radio size={16} strokeWidth={1.5} className="stat-icon" aria-hidden="true" />
-              Powered by Supabase with live subscriptions and RLS security
-            </span>
+          <div className="platform-card platform-card-admin">
+            <div className="platform-icon">
+              <Cpu size={24} strokeWidth={1.5} aria-hidden="true" />
+            </div>
+            <h3>Admin Dashboard</h3>
+            <p>
+              A centralized digital dashboard that replaces scattered
+              emails and phone calls, giving city managers a single
+              source of truth for all incoming reports.
+            </p>
+            <p>
+              With map visualization, AI-powered classification, and data
+              analytics, managers can quickly filter and process tasks, and
+              push progress updates to residents with a single click.
+            </p>
           </div>
         </div>
       </section>
 
       <section id="features" className="features-section">
-        <h2 className="section-title">Smart features for modern cities</h2>
+        <h2 className="section-title">Workflow &amp; Core Value</h2>
         <p className="section-subtitle">
-          Everything citizens and governments need to resolve issues faster.
+          How FixMyCity transforms civic reporting from start to finish.
         </p>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon feature-icon-ai">
-              <BrainCircuit size={24} strokeWidth={1.5} aria-hidden="true" />
+            <div className="feature-icon feature-icon-sync">
+              <Radio size={24} strokeWidth={1.5} aria-hidden="true" />
             </div>
-            <h3>AI Categorization</h3>
+            <h3>Seamless Integration</h3>
             <p>
-              Automatically classifies incoming issues using image recognition
-              and NLP, routing each report to the right department instantly.
+              A real-time monitoring system ensures citizen reports are
+              instantly synchronized to the government dashboard the moment
+              they are submitted.
             </p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon feature-icon-offline">
-              <CloudOff size={24} strokeWidth={1.5} aria-hidden="true" />
+            <div className="feature-icon feature-icon-efficiency">
+              <Zap size={24} strokeWidth={1.5} aria-hidden="true" />
             </div>
-            <h3>Offline Mode</h3>
+            <h3>Enhanced Efficiency</h3>
             <p>
-              Queue reports without internet connectivity and sync
-              automatically when back online — no report left behind.
+              AI automatically classifies incoming reports and analyzes
+              priority levels, enabling faster triage and smarter resource
+              allocation across city departments.
             </p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon feature-icon-secure">
-              <ShieldCheck size={24} strokeWidth={1.5} aria-hidden="true" />
+            <div className="feature-icon feature-icon-wellbeing">
+              <Heart size={24} strokeWidth={1.5} aria-hidden="true" />
             </div>
-            <h3>Enterprise Security</h3>
+            <h3>Stronger Communities</h3>
             <p>
-              Row-Level Security (RLS) ensures data protection and privacy.
-              Real-time subscriptions keep every stakeholder in sync.
+              89% of residents say post-report feedback is critical.
+              Transparent processes and timely updates build trust,
+              belonging, and a true sense of participation in city
+              development.
             </p>
           </div>
         </div>
+        <p className="features-quote">&ldquo;Better cities start with more efficient reporting.&rdquo;</p>
       </section>
 
       <section id="how-it-works" className="steps-section">
@@ -166,20 +192,50 @@ function App() {
         </div>
       </section>
 
+      <section id="mobile-app" className="mobile-section">
+        <h2 className="section-title">Our mobile app</h2>
+        <p className="section-subtitle">
+          Report issues anytime, anywhere with our mobile app for iOS and Android.
+        </p>
+        <div className="mobile-screens">
+          <div className="mobile-device">
+            <img src={screen1Png} alt="FixMyCity app home screen" />
+          </div>
+          <div className="mobile-device">
+            <img src={screen2Png} alt="FixMyCity app report screen" />
+          </div>
+          <div className="mobile-device">
+            <img src={screen3Png} alt="FixMyCity app tracking screen" />
+          </div>
+        </div>
+        <div className="mobile-platforms">
+          <div className="platform-badge">
+            <Apple size={22} strokeWidth={1.5} aria-hidden="true" />
+            <div className="platform-text">
+              <span className="platform-name">iOS App</span>
+              <span className="platform-label">App Store</span>
+            </div>
+          </div>
+          <div className="platform-badge">
+            <Smartphone size={22} strokeWidth={1.5} aria-hidden="true" />
+            <div className="platform-text">
+              <span className="platform-name">Android App</span>
+              <span className="platform-label">Google Play</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="tech-stack" className="tech-section">
         <h2 className="section-title">Built on enterprise infrastructure</h2>
         <p className="section-subtitle">
-          Scalable backend powered by <strong>Supabase (PostgreSQL)</strong> with
-          real-time subscriptions, Row-Level Security, <strong>Flutter</strong> cross-platform UI,
-          and <strong>AI integration</strong> for smart issue categorization.
+          A modern technology foundation designed for reliability,
+          speed, and security — so cities can focus on what matters.
         </p>
         <div className="tech-badges">
-          <span className="tech-badge"><BrainCircuit size={16} strokeWidth={1.5} aria-hidden="true" /> AI Integration</span>
-          <span className="tech-badge"><Smartphone size={16} strokeWidth={1.5} aria-hidden="true" /> Flutter</span>
-          <span className="tech-badge"><Database size={16} strokeWidth={1.5} aria-hidden="true" /> Supabase</span>
-          <span className="tech-badge"><Database size={16} strokeWidth={1.5} aria-hidden="true" /> PostgreSQL</span>
-          <span className="tech-badge"><Radio size={16} strokeWidth={1.5} aria-hidden="true" /> Real-time</span>
-          <span className="tech-badge"><Lock size={16} strokeWidth={1.5} aria-hidden="true" /> RLS</span>
+          <span className="tech-badge"><BrainCircuit size={16} strokeWidth={1.5} aria-hidden="true" /> AI-Powered</span>
+          <span className="tech-badge"><Smartphone size={16} strokeWidth={1.5} aria-hidden="true" /> iOS &amp; Android</span>
+          <span className="tech-badge"><Lock size={16} strokeWidth={1.5} aria-hidden="true" /> Secure &amp; Reliable</span>
         </div>
         <div className="tech-partner">
           <span className="tech-partner-by">Powered by</span>
